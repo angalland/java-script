@@ -3,5 +3,5 @@ document.getElementsByClassName("carre").addEventListener("click", function(){
 });
 
 function clickerBoite(){
-document.getElementsByClassName("carre").add.classList("carre-click");
+document.getElementsByClassName("carre").addquerySelector("carre-click");
 }
