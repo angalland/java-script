@@ -1,4 +1,4 @@
- document.getElementsByClassName("div").addEventListener("click", function(){
+ document.querySelectorAll("carre").addEventListener("click", function(){
     console.log("boite", "clik !");
 });
 
