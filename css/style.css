@@ -51,13 +51,14 @@ article {
 
 .carre-click {
     background-color: #800907;
-    transform: scale(0.8);
+    width: 180px;
+    height: 180px;
     animation: appear 1s;
 }
 
 @keyframes appear {
     from{
-        transform: scale(0) rotate(180deg);
+        transform: scale(0) rotate(360deg);
     }to{
         transform: scale(1) rotate(0deg);
     }

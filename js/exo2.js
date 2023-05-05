@@ -1,7 +1,7 @@
-document.getElementsByClassName("carre").addEventListener("click", function(){
-    clickerBoite();
+ document.getElementsByClassName("div").addEventListener("click", function(){
+    console.log("boite", "clik !");
 });
 
-function clickerBoite(){
-document.getElementsByClassName("carre").addquerySelector("carre-click");
-}
+// function clickerBoite(){
+// document.getElementsByClassName("carre").addquerySelector("carre-click");
+// }
