@@ -8,6 +8,18 @@ main {
     align-items: center;
     width: 100%;
     height: 100vh;
+    gap: 10px;
+}
+
+article {
+    display: flex;
+    /* width: 500px; */
+    gap:10px;
+    flex-wrap: wrap;
+    width: 500px;
+
+
+    
 }
 
 #carre {
@@ -16,11 +28,41 @@ main {
     background-color: rgb(22, 228, 166);
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-size: 2em;
     cursor: pointer;
 }
+
+.carre {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(22, 228, 166);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 2em;
+    cursor: pointer;
+    gap:10px;
+}
+
+.carre-click {
+    background-color: #800907;
+    transform: scale(0.8);
+    animation: appear 1s;
+}
+
+@keyframes appear {
+    from{
+        transform: scale(0) rotate(180deg);
+    }to{
+        transform: scale(1) rotate(0deg);
+    }
+}
+
 
 
 

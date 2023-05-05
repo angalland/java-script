@@ -5,7 +5,7 @@ let message = "Class : carre\n- Background color : rgb (22, 228, 166)\n- Color :
 // }
 
 
-
 document.getElementById("carre").addEventListener("click", function () {
     window.alert(message);
 });
+
