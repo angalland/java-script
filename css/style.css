@@ -47,24 +47,16 @@ article {
     font-size: 2em;
     cursor: pointer;
     gap:10px;
-    transition: background-color 1s, color 1s, transform 1s;
-    
+    transition: all 1s ease;
 }
 
 .carre-click {
     background-color: #800907;
-    transform: scale(0.8);
+    transform: scale(0.8) rotate(360deg);
     color: blue;
-    animation: appear 1s;
 }
 
-@keyframes appear {
-    from{
-        transform: scale(0) rotate(360deg);
-    }to{
-        transform: scale(1) rotate(0deg);
-    }
-}
+
 
 
 
