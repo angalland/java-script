@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carre {
+   width: 60px;
+   height: 60px;
+   border: 2px black solid;
+}
+
