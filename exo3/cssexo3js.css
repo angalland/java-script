@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+article {
+    display: flex;
+    gap:5px;
+    flex-wrap: wrap;
+    width: 750px;
+}
+
+.carre {
+    width: 200px;
+    height: 200px;
+    background-color: #d0ffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.joueur1 {
+    color : red;
+    text-align: center;
+}
+
+.joueur2 {
+    color: green;
+    text-align: center;
+}
