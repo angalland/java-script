@@ -47,12 +47,14 @@ article {
     font-size: 2em;
     cursor: pointer;
     gap:10px;
+    transition: background-color 1s, color 1s, transform 1s;
+    
 }
 
 .carre-click {
     background-color: #800907;
-    width: 180px;
-    height: 180px;
+    transform: scale(0.8);
+    color: blue;
     animation: appear 1s;
 }
 
