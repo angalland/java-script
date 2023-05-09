@@ -29,6 +29,10 @@ function addCarre () {
     carre.style.backgroundColor = couleurAleatoire();
 };
 
+function enleverCarre() {
+    document.getElementsByName("article").removeChild(carre);
+}
+
 function couleurAleatoire(){
     let aleatoire = (Math.random() * 0xFFFFFF << 0).toString(16); 
     return "#" + aleatoire;
@@ -37,5 +41,11 @@ function couleurAleatoire(){
 document.addEventListener("keydown", function(event){
     if (event.key === "ArrowDown") {
         addCarre();
+    }
+})
+
+document.addEventListener("keydown", function(event){
+    if (event.key === "ArrowUp") {
+        enleverCarre();
     }
 })
