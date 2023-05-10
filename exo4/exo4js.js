@@ -20,6 +20,14 @@ function couleurAleatoire(){    // fonction permettant de definir la couleur ale
     return "#" + aleatoire; // retourne # plus le nombre hexadécimale aleatoire ce qui crée une couleur aléatoire
 }
 
+function clickCarre() {
+
+    let carreCouleur = document.getElementsByClassName(".carre");
+    carreCouleur.style.backgroundColor = "#000000";
+    
+    
+}
+
 document.addEventListener("keydown", function(event){   // ajoute un evenement clavier 
     if (event.key === "ArrowDown") {                    // conditionne l'evenement a la pression de la fleche du bas
         addCarre();                                     // crée un carre
@@ -30,4 +38,8 @@ document.addEventListener("keydown", function(event){   // ajoute un evenement a
     if (event.key === "ArrowUp") {                      // conditionne l'evenement a la pression de la fleche du haut 
         enleverCarre();                                 // enleve un carre
     }
+})
+
+document.addEventListener("click", function(){
+    clickCarre();
 })
