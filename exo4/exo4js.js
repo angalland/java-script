@@ -1,15 +1,21 @@
 let nbCarre = [];   // crée une variable tableaux qui contiendra tous les carre crées
 
 function addCarre () {  // fonction qui crée un carré
-    let carre = document.createElement("div");
-    carre.classList.add("carre");
-    let article = document.querySelector("article")
-    article.appendChild(carre);
-    carre.style.backgroundColor = couleurAleatoire();  // le backgrundcolor des carres sera par la fonction couleurAleatoire
-    nbCarre.push(carre); // chaque carre créé sera ajouter au tableau de nbCarre  
-    carre.addEventListener("click", function(){ // ajoute un événement click
-        carre.style.backgroundColor = "black";  // quand on click le background color devient noir
-    })
+    if (nbCarre.length < 225 ) { 
+        let carre = document.createElement("div");
+        carre.classList.add("carre");
+        let article = document.querySelector("article")
+        article.appendChild(carre);
+        carre.style.backgroundColor = couleurAleatoire();  // le backgrundcolor des carres sera par la fonction couleurAleatoire
+        nbCarre.push(carre); // chaque carre créé sera ajouter au tableau de nbCarre 
+    
+       
+        carre.addEventListener("click", function(){ // ajoute un événement click
+            if (nbCarre.length === 225){
+                carre.style.backgroundColor = "black";  // quand on click le background color devient noir
+                }
+            })       
+    }
 };
 
 function enleverCarre() {   // fonction qui enleve le dernier carre 
