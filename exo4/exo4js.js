@@ -6,7 +6,7 @@ function addCarre () {  // fonction qui crée un carré
     let article = document.querySelector("article")
     article.appendChild(carre);
     carre.style.backgroundColor = couleurAleatoire();  // le backgrundcolor des carres sera par la fonction couleurAleatoire
-    nbCarre.push(carre); // chaque carre créé sera ajouter au tableau de nbCarre
+    nbCarre.push(carre); // chaque carre créé sera ajouter au tableau de nbCarre  
 };
 
 function enleverCarre() {   // fonction qui enleve le dernier carre 
@@ -18,14 +18,6 @@ function enleverCarre() {   // fonction qui enleve le dernier carre
 function couleurAleatoire(){    // fonction permettant de definir la couleur aleatoire en hexadécimale
     let aleatoire = (Math.random() * 0xFFFFFF << 0).toString(16);   // crée une variable qui sera un nombre aleatoire compris entre 0 et 999999 
     return "#" + aleatoire; // retourne # plus le nombre hexadécimale aleatoire ce qui crée une couleur aléatoire
-}
-
-function clickCarre() {
-
-    let carreCouleur = document.getElementsByClassName(".carre");
-    carreCouleur.style.backgroundColor = "#000000";
-    
-    
 }
 
 document.addEventListener("keydown", function(event){   // ajoute un evenement clavier 
@@ -40,6 +32,3 @@ document.addEventListener("keydown", function(event){   // ajoute un evenement a
     }
 })
 
-document.addEventListener("click", function(){
-    clickCarre();
-})
