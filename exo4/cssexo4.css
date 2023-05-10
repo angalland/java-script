@@ -9,7 +9,11 @@ main {
 article {
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     border: 2px black solid;
+    width: 900px;
+    height: 900px;
+    gap: 0;
 }
 
 .carre {
