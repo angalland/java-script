@@ -7,6 +7,9 @@ function addCarre () {  // fonction qui crée un carré
     article.appendChild(carre);
     carre.style.backgroundColor = couleurAleatoire();  // le backgrundcolor des carres sera par la fonction couleurAleatoire
     nbCarre.push(carre); // chaque carre créé sera ajouter au tableau de nbCarre  
+    carre.addEventListener("click", function(){ // ajoute un événement click
+        carre.style.backgroundColor = "black";  // quand on click le background color devient noir
+    })
 };
 
 function enleverCarre() {   // fonction qui enleve le dernier carre 
